@@ -1,1 +1,27 @@
 // Mixins in here
+// destination > btn > button
+.rounded-button(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+    background-color: teal;
+    height: 40px;
+    // border-radius: 10px;
+    width: 90%;
+    color: white;
+}
+
+.destination {
+
+     .btn {
+         
+        button {
+            // background-color: teal;
+            // height: 40px;
+            // border-radius: 10px;
+            // width: 90%;
+            // color: white;
+            .rounded-button(10px);
+        }
+     }   
+}
