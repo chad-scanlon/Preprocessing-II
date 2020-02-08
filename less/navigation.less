@@ -2,17 +2,30 @@
 .navigation {
     display: flex;
     justify-content: space-between;
+    // justify-content: space-evenly;
     // flex-direction: column;
-    // align-content: center;
+    // align-items: center;
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+        // flex-wrap: wrap;
+        align-content: center;
+    }
     .nav-bar {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-evenly;
-        max-width: 40%;
+        align-content: space-around;
+        // justify-content: stretch;
+        // max-width: 40%;
         
         
         a {
             text-decoration: none;
             margin: auto;
+            
+            
+            
             
             
         }
